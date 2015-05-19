@@ -15,14 +15,8 @@ Projet21 currently use : <br />
 * **[Gravatar](https://gravatar.com) :** A new way to get an profile pic
 
 # Download
+All version are avalaible to download at [cms.projet21.eu](http://cms.projet21.eu/)
 
-## Last versions
-
-Got to [cms.projet21.eu](http://cms.projet21.eu/)
-
-## Historic
-
-You can check [cms.projet21.eu](http://cms.projet21.eu/download)
 
 #Install
 
