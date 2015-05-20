@@ -9,7 +9,7 @@
 $settingsDbHost = "localhost"; //Databe host
 $settingsDbName = "ternoc"; //Database name
 $settingsDbUser = "root"; //Database user
-$settingsDbPassword = ""; //Database password for user
+$settingsDbPassword = "root"; //Database password for user
 
 /*
 === URL settings ===
