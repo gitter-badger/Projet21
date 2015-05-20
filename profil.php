@@ -25,6 +25,7 @@ while ($donnees = $req->fetch())
     $groupe = $donnees['groupe'];
     $gravatar = $donnees['gravatar'];
     $id = $donnees['id'];
+    $bio = $donnees['bio'];
 }
 
 
@@ -98,25 +99,14 @@ $req->closeCursor();
             <div class="col-md-1">
                 <p>
                     <?php
-                    echo '<img src="http://www.gravatar.com/avatar/' . md5(strtolower(trim($gravatar))) .'?r=g&d=identicon" alt="avatar" class="img-responsive" />';
+                    echo '<img src="' . gravatarUrl($gravatar) .'" alt="avatar" class="img-responsive" />';
                     ?>
                 </p>
             </div>
             <div class="col-md-4">
                 Nom d'utilisateur : <?php
                 //affichage badge
-                if($groupe == "administrateur")
-                {
-                    echo '<span class="label label-danger">Admin</span> ';
-                }
-                elseif($groupe == "moderateur")
-                {
-                    echo '<span class="label label-info">Modo</span> ';
-                }
-                elseif($groupe == "vip")
-                {
-                    echo '<span class="label label-success">VIP</span> ';
-                }
+                echo userBadge($groupe);
                 echo $pseudo;
                 ?>
                 <br/>
@@ -124,6 +114,8 @@ $req->closeCursor();
                 ID Utilisateur : <?php echo $id; ?>
             </div>
             <div class="col-md-7">
+                <h4>Bio de l'utilisateur : </h4>
+                <?php echo tercode($bio); ?>
             </div>
         </div>
     </div>
