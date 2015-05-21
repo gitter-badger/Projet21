@@ -67,6 +67,41 @@ while ($donnees = $req->fetch())
                 <?php echo tercode($bio); ?>
             </div>
         </div>
+
+        <!-- formulaires -->
+        <div class="row">
+
+            <!-- formulaire mot de passe -->
+            <div class="col-md-3">
+                <form class="form-horizontal" method="post" action="password">
+                    <fieldset>
+
+                        <!-- Form Name -->
+                        <legend>Modifier votre mot de passe</legend>
+
+                        <!-- Password input-->
+                        <div class="form-group">
+                            <label class="control-label" for="password">Mot de passe</label>
+                            <input id="password" name="password" type="password" placeholder="" class="form-control input-md" required="">
+
+                        </div>
+
+                        <!-- Password input-->
+                        <div class="form-group">
+                            <label class="control-label" for="passwordverification">Vérification du mot de passe</label>
+                            <input id="passwordverification" name="passwordverification" type="password" class="form-control input-md" required="">
+                            <span class="help-block">Retapez votre mot de passe</span>
+                        </div>
+
+                        <!-- Button -->
+                        <div class="form-group">
+                            <button id="singlebutton" name="singlebutton" class="btn btn-danger">Changer mon mot de passe</button>
+                        </div>
+
+                    </fieldset>
+                </form>
+            </div>
+        </div>
     </div>
 </body>
 </html>
