@@ -34,6 +34,12 @@ while ($donnees = $req->fetch())
     <title>Projet 21</title>
     <meta charset="utf-8" />
     <?php include("../head.php"); ?>
+    <style>
+        .form-align-normalized
+        {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -72,8 +78,8 @@ while ($donnees = $req->fetch())
         <div class="row">
 
             <!-- formulaire mot de passe -->
-            <div class="col-md-3">
-                <form class="form-horizontal" method="post" action="password">
+            <div class="col-md-4">
+                <form class="form-horizontal form-align-normalized" method="post" action="password">
                     <fieldset>
 
                         <!-- Form Name -->
@@ -82,14 +88,14 @@ while ($donnees = $req->fetch())
                         <!-- Password input-->
                         <div class="form-group">
                             <label class="control-label" for="password">Mot de passe</label>
-                            <input id="password" name="password" type="password" placeholder="" class="form-control input-md" required="">
+                            <input id="password" name="password" type="password" placeholder="" class="form-control input-md" required="" />
 
                         </div>
 
                         <!-- Password input-->
                         <div class="form-group">
                             <label class="control-label" for="passwordverification">Vérification du mot de passe</label>
-                            <input id="passwordverification" name="passwordverification" type="password" class="form-control input-md" required="">
+                            <input id="passwordverification" name="passwordverification" type="password" class="form-control input-md" required="" />
                             <span class="help-block">Retapez votre mot de passe</span>
                         </div>
 
@@ -101,7 +107,41 @@ while ($donnees = $req->fetch())
                     </fieldset>
                 </form>
             </div>
+
+            <!-- formulaire email -->
+            <div class="col-md-4">
+                <form class="form-horizontal form-align-normalized" method="post" action="email">
+                    <fieldset>
+                        <legend>Modifier votre email</legend>
+                        <div class="form-group">
+                            <label class="control-label" for="email">Nouvelle adresse email</label>
+                            <input id="email" name="email" type="email" class="form-control input-md" required="" />
+                        </div>
+                        <div class="form-group">
+                            <button id="singlebutton" name="singlebutton" class="btn btn-warning">Changer mon adresse mail</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+
+            <!-- formulaire gravatar -->
+            <div class="col-md-4">
+                <form class="form-horizontal form-align-normalized" method="post" action="gravatar">
+                    <fieldset>
+                        <legend>Modifier votre adresse mail gravatar</legend>
+                        <div class="form-group">
+                            <label class="control-label" for="email">Nouvelle adresse gravatar</label>
+                            <input id="email" name="email" type="email" class="form-control input-md" required="" />
+                        </div>
+                        <div class="form-group">
+                            <button id="singlebutton" name="singlebutton" class="btn btn-warning">Changer mon adresse gravatar</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
         </div>
+        <!-- /formulaires -->
+
     </div>
 </body>
 </html>
