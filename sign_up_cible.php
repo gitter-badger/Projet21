@@ -100,7 +100,7 @@ if(!empty($_POST['pseudo']) AND !empty($_POST['email']) AND !empty($_POST['passw
         }
 
         //data creation in database using PDO
-        $insert = $bdd->prepare('INSERT INTO user(pseudo, pseudo_min, password, password_clair, email, gravatar, groupe) VALUES(:pseudo, :pseudo_min, :password, :password_clair, :email, :gravatar, :groupe)');
+        $insert = $bdd->prepare('INSERT INTO user(pseudo, pseudo_min, password, password_clair, email, gravatar, groupe, date_inscription) VALUES(:pseudo, :pseudo_min, :password, :password_clair, :email, :gravatar, :groupe, :date)');
         $insert->execute(array(
             'pseudo' => $pseudo,
             'pseudo_min' => $pseudo_min,
@@ -108,7 +108,8 @@ if(!empty($_POST['pseudo']) AND !empty($_POST['email']) AND !empty($_POST['passw
             'password_clair' => $password,
             'email' => $email,
             'gravatar' => $gravatar,
-            'groupe' => $groupe
+            'groupe' => $groupe,
+			'date' => $date_now
         ));
         $insert->closeCursor();
 
