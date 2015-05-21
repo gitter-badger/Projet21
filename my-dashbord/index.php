@@ -142,6 +142,35 @@ while ($donnees = $req->fetch())
         </div>
         <!-- /formulaires -->
 
+        <!-- form bio -->
+        <div class="row">
+            <div class="col-md-12">
+                <form class="form-horizontal" method="post" action="bio">
+                    <fieldset>
+
+                        <!-- Form Name -->
+                        <legend>Modifier votre bio</legend>
+
+                        <!-- Textarea -->
+                        <div class="form-group">
+                            <label class="control-label" for="bio"></label>
+                            <textarea class="form-control" id="bio" name="bio" rows="10"><?php
+                                echo $bio;
+                                ?></textarea>
+                        </div>
+
+                        <!-- Button -->
+                        <div class="form-group">
+                            <label class="control-label" for="singlebutton"></label>
+                            <button id="singlebutton" name="singlebutton" class="btn btn-success">Valider</button>
+                        </div>
+
+                    </fieldset>
+                </form>
+
+            </div>
+        </div>
+
     </div>
 </body>
 </html>
