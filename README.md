@@ -11,7 +11,7 @@ Rendez vous ici : http://projet21.eu/
 Projet21 currently use : <br />
 * **[Bootstrap](https://github.com/twbs/bootstrap) :** CSS and JS design <br/>
 * **[TerCode](https://github.com/Ternoc/TerCode) :** Text edition for bootstrap
-* **[ReCaptcha](https://google.com/recaptcha) :** The google smart captcha
+* **[ReCaptcha](https://www.google.com/recaptcha/) :** The google smart captcha
 * **[Gravatar](https://gravatar.com) :** A new way to get an profile pic
 
 # Download

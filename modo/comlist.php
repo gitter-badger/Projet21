@@ -24,7 +24,7 @@ else
     <div class="container">
         <div class="jumbotron">
             <h1>Panneau de modération du site</h1>
-            <p>Panneau de modération du site</p>
+            <p>Liste des commentaires</p>
         </div>
         <?php include("../nav.php"); ?>
         <div class="row">
@@ -51,10 +51,15 @@ else
                             ?>
                             <!-- comment autor -->
                             <div class="panel-heading">
+                                <!-- display user gravatar -->
                                 <img class="img-responsive" src="<?php echo gravatarUrl($donnees_autor['gravatar'], '50'); ?>" alt="Avatar de l'auteur">
+                                <!-- display user badge -->
                                 <?php echo userBadge($donnees_autor['groupe']); ?>
+                                <!-- display user pseudo -->
                                 <a href="profil?user=<?php echo $donnees_autor['pseudo']; ?>"><?php echo $donnees_autor['pseudo']; ?></a>
+                                <!-- display com id and com date -->
                                 <div style="text-align:right;">#<?php echo $donnees['id'] . ' ' . $donnees['date']; ?></div>
+                                <div style="text-align:right;"><a href="<?php echo $location_url; ?>/news_read?id=<?php echo $donnees['id_news']; ?>" target="_blank">Sur news</a></div>
                                 <?php
 
                                 //moderator and administrator display link

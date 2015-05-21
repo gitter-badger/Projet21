@@ -19,7 +19,8 @@
                     <span class="sr-only">Toggle Dropdown</span>
                 </button>
                 <ul class="dropdown-menu" role="menu">
-                    <li><a href="<?php echo $location_url; ?>/profil?user=<?php echo $_SESSION['pseudo']; ?>">Mon profil</a></li>
+                    <li><a href="<?php echo $location_url; ?>/profil?user=<?php echo $_SESSION['pseudo']; ?>"><span class="glyphicon glyphicon-user"></span> Mon profil</a></li>
+                    <li><a href="<?php echo $location_url; ?>/my-dashbord"><span class="glyphicon glyphicon-dashboard"></span> Mon dashbord</a></li>
                     <?php
                     //admin pannel
                     if($_SESSION['groupe'] == "administrateur")
