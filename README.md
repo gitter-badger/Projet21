@@ -10,9 +10,9 @@ Rendez vous ici : http://projet21.eu/
 # Composants
 Projet21 currently use : <br />
 * **[Bootstrap](https://github.com/twbs/bootstrap) :** CSS and JS design <br/>
-* **[TerCode](https://github.com/Ternoc/TerCode) :** Text edition for bootstrap
+* **[TerCode](https://github.com/Ternoc/TerCode) :** A little markup language to use with bootstrap
 * **[ReCaptcha](https://www.google.com/recaptcha/) :** The google smart captcha
-* **[Gravatar](https://gravatar.com) :** A new way to get an profile pic
+* **[Gravatar](https://gravatar.com) :** A new way to get a profile pic
 
 # Download
 All version are avalaible to download at [cms.projet21.eu](http://cms.projet21.eu/)
