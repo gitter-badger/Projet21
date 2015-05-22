@@ -1,4 +1,6 @@
 # Projet21
+
+[![Join the chat at https://gitter.im/Projet21/Projet21](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/Projet21/Projet21?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 Two friend creating a dedicated server for host files, games server.....
 You will find here all website files with blog, forum, user gestion.....
 Here the server url : http://projet21.eu/
